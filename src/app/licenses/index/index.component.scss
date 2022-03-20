@@ -1,0 +1,30 @@
+main{
+  .background-img{
+    max-width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    figure{
+      position: absolute;
+      width: 100%;
+      height: max-content;
+      right: 0;
+      height: auto;
+      content: url("https://i.imgur.com/VwSVNHh.jpeg");
+    }
+  }
+}
+
+@media only screen and (max-width:874px){
+  main{
+    .background-img{
+      figure{
+        width: auto;
+      }
+    }
+
+    .license-card-section{
+
+    }
+  }
+}
