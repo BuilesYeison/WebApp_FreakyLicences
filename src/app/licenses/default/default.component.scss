@@ -1,0 +1,62 @@
+@import "../../variables";
+.default-license{
+  width: 40rem;
+  height: 21.875rem;
+  background-image: url("../../../assets/licenses/Component\ 1.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  span{
+    color:$default-license-text-color;
+    font-weight:700;
+    font-size: 1.1rem;
+  }
+  input,textarea{
+    @extend %input-style;
+    color:$default-license-text-color;
+    font-size: 1.1rem;
+  }
+  .tittle{
+    font-size: 3rem;
+    text-align: center;
+    margin: 1.8rem 0;
+  }
+  .content-details{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .img-container{
+      img{
+        width: 9.375rem;
+        height: 10.625rem;
+        object-fit: cover;
+        object-position: center;
+        border-radius: .75rem;
+      }
+    }
+    .details-container{
+      height: 70%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      .note{
+        position: relative;
+        textarea{
+          resize: none;
+          overflow: hidden;
+          padding: 0;
+          margin-left: 2.5rem;
+          width: 80%;
+        }
+        span{
+          position: absolute;
+          top: 4px;
+        }
+      }
+    }
+  }
+}
