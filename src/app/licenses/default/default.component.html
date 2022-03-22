@@ -7,15 +7,16 @@
     <div class="details-container">
       <div class="name">
         <span>Nombre:</span>
-        <input spellcheck="false" type="text" name="name" id="">
+        <input spellcheck="false" type="text" name="name" [(ngModel)]="name">
       </div>
       <div class="expedition">
         <span>Fecha de expedición:</span>
-        <input spellcheck="false" type="date" name="expedition" id="">
+        <input spellcheck="false" type="date" name="expedition" [(ngModel)] = "date" placeholder="dd-mm-yyyy" value=""
+        min="1997-01-01" max="2030-12-31">
       </div>
       <div class="note">
         <span>Nota:</span>
-        <textarea spellcheck="false" type="text" name="note" id=""></textarea>
+        <textarea spellcheck="false" type="text" name="note" [(ngModel)] = "note"></textarea>
       </div>
     </div>
   </div>

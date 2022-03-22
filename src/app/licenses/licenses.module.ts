@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DefaultComponent } from './default/default.component';
 import { IndexComponent } from './index/index.component';
 import { LicensesRoutingModule } from './licenses-routing.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { LicensesRoutingModule } from './licenses-routing.module';
   ],
   imports: [
     CommonModule,
-    LicensesRoutingModule
+    LicensesRoutingModule,
+    FormsModule
   ],
   exports:[
     IndexComponent

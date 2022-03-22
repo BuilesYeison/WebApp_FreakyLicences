@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LicensesModule } from './licenses/licenses.module';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +14,8 @@ import { LicensesModule } from './licenses/licenses.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LicensesModule
+    LicensesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

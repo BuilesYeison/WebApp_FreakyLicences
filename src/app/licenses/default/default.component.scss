@@ -2,7 +2,7 @@
 .default-license{
   width: 40rem;
   height: 21.875rem;
-  background-image: url("../../../assets/licenses/Component\ 1.png");
+  background-image: url("../../../assets/licenses/default.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -49,12 +49,12 @@
           resize: none;
           overflow: hidden;
           padding: 0;
-          margin-left: 2.5rem;
+          margin-left: 2.8rem;
           width: 80%;
         }
         span{
           position: absolute;
-          top: 4px;
+          top: .1870rem;
         }
       }
     }
