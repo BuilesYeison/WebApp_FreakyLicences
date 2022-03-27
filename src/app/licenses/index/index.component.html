@@ -3,6 +3,19 @@
     <figure></figure>
   </div>
   <section class="license-card-section">
-    <router-outlet></router-outlet>
+    <section class="license-container">
+      <div class="select-license">
+        <ul>
+          <li>Default</li>
+          <li>another one</li>
+        </ul>
+      </div>
+    <div class="license-card">
+      <router-outlet></router-outlet>
+    </div>
+    </section>
+    <section class="save">
+      <a class="save-license">Descargar</a>
+    </section>
   </section>
 </main>

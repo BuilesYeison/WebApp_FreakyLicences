@@ -2,7 +2,11 @@
   <input type="text" name="title" spellcheck="false" value="LICENCIA DE OTAKU" class="tittle">
   <div class="content-details">
     <div class="img-container">
-      <img src="https://i.imgur.com/HXY3V2U.jpeg" alt="">
+      <img [src]="imgUrl" alt="">
+      <div class="input-container">
+        <span>Img URL:</span>
+        <input class="input-img-url" type="text" name="imgurl" [(ngModel)]="imgUrl">
+      </div>
     </div>
     <div class="details-container">
       <div class="name">

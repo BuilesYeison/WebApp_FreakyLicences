@@ -1,3 +1,4 @@
+@import "../../variables";
 main{
   display: flex;
   align-items: center;
@@ -15,8 +16,55 @@ main{
   }
   .license-card-section{
     position: absolute;
-    width: min-content;
+    width: 80%;
+    border: 1px solid;
     height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .license-container{
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+
+      .select-license{
+        min-height: 100%;
+        border-radius: 1.5rem;
+        width: 20%;
+        background-color: $blue-component-color;
+        position: relative;
+        ul{
+          position: absolute;
+          top: 25px;
+          width: 100%;
+          text-align: center;
+          li{
+            color: $light-text-color;
+            padding: .225rem 0;
+            cursor: pointer;
+            &:hover{
+              background-color: $light-text-color;
+              color:$blue-component-color;
+            }
+          }
+        }
+      }
+    }
+    .save{
+      margin-top: 1.9375rem;
+      .save-license{
+        cursor: pointer;
+        padding: .925rem 2.8125rem ;
+        background-color: $button-color;
+        border-radius: 1rem;
+        color: $light-text-color;
+        transition: all 0.2s;
+        font-size: 1.5rem;
+        &:hover{
+          background-color: $button-hover-color;
+        }
+      }
+    }
   }
 }
 

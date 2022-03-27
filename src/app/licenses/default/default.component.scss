@@ -24,6 +24,7 @@
     text-align: center;
     margin: 1.8rem 0;
   }
+  /**/
   .content-details{
     width: 80%;
     display: flex;
@@ -36,6 +37,38 @@
         object-fit: cover;
         object-position: center;
         border-radius: .75rem;
+      }
+      position: relative;
+      .input-container{
+        position: absolute;
+        left: -25px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        border-radius: 1.5rem;
+        background-color: $blue-component-color;
+        overflow: hidden;
+        width: 0;
+        transition: all 1s;
+
+        span{
+          font-size: .875rem;
+          min-width: fit-content;
+          color: $light-text-color;
+        }
+        .input-img-url{
+          font-size: .875rem;
+          text-align: left;
+          width: 100%;
+          color: $light-text-color;
+        }
+
+      }
+      &:hover{
+        .input-container{
+          width: 180%;
+          padding: .2125rem .625rem;
+        }
       }
     }
     .details-container{
