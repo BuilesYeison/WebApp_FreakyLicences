@@ -4,16 +4,20 @@ import { DefaultComponent } from './default/default.component';
 import { IndexComponent } from './index/index.component';
 import { LicensesRoutingModule } from './licenses-routing.module';
 import { FormsModule } from '@angular/forms';
+import { SimpComponent } from './simp/simp.component';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
     DefaultComponent,
-    IndexComponent
+    IndexComponent,
+    SimpComponent
   ],
   imports: [
     CommonModule,
     LicensesRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   exports:[
     IndexComponent

@@ -1,0 +1,5 @@
+@import "../../variables";
+.license{
+  background-image: url("../../../assets/licenses/default.png");
+  @extend %basic-license-design;
+}

@@ -9,3 +9,20 @@ $button-hover-color:#23527e;
   outline: 0;
   background: transparent;
 }
+
+%basic-license-design{
+  width: 40rem;
+  height: 21.875rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  input,textarea{
+    @extend %input-style;
+    color:$default-license-text-color;
+    font-size: 1.1rem;
+  }
+}

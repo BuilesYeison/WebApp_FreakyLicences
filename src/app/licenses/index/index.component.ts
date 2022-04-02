@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { SaveLicenseService } from '../save-license.service';
 
 @Component({
   selector: 'app-index',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class IndexComponent implements OnInit {
   routes:any;
-  constructor(private router:Router) {
+  constructor(private saveLicense:SaveLicenseService) {
     this.routes = [
       {route:"",name:"Default",selected:true},
       {route:"simp",name:"SIMP",selected:false}
@@ -16,8 +17,16 @@ export class IndexComponent implements OnInit {
    }
 
   ngOnInit(): void {
+
   }
 
+  saveLicenseClick():void{
+    this.saveLicense.saveLicense().subscribe(data=>{
+      console.warn(data);
+    });
+  }
+
+  //to change the style of li elements to selected or not
   checkRoute(newOption:string):void{
     let oldOption = this.routes.find((name:any)=>{
       return name.selected == true;
