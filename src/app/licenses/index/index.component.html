@@ -6,8 +6,7 @@
     <section class="license-container">
       <div class="select-license">
         <ul>
-          <li>Default</li>
-          <li>another one</li>
+          <li *ngFor="let item of routes" [ngClass]="item.selected?'selected':'none'" (click)="checkRoute(item.name)" [routerLink]="item.route">{{item.name}}</li>
         </ul>
       </div>
     <div class="license-card">

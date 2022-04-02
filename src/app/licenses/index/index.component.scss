@@ -12,12 +12,12 @@ main{
       height: max-content;
       height: auto;
       content: url("https://i.imgur.com/VwSVNHh.jpeg");
+
     }
   }
   .license-card-section{
     position: absolute;
     width: 80%;
-    border: 1px solid;
     height: auto;
     display: flex;
     align-items: center;
@@ -42,16 +42,16 @@ main{
             color: $light-text-color;
             padding: .225rem 0;
             cursor: pointer;
-            &:hover{
-              background-color: $light-text-color;
-              color:$blue-component-color;
-            }
+          }
+          li:hover,.selected{
+            background-color: $light-text-color;
+            color:$blue-component-color;
           }
         }
       }
     }
     .save{
-      margin-top: 1.9375rem;
+      margin-top: 2.9375rem;
       .save-license{
         cursor: pointer;
         padding: .925rem 2.8125rem ;
